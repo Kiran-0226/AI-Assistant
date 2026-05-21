@@ -7,7 +7,45 @@
   font-family: "Outfit";
 }
 
+html,
+body,
 #root {
-  min-height: 100vh;
-  display: flex;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+}
+
+:root {
+  --bg: #ffffff;
+  --text: #222222;
+  --sidebar-bg: #f7f8fc;
+  --card-bg: #edf2fb;
+  --border: #e5e5e5;
+  --muted: #666666;
+  --nav-text: #444444;
+  --bubble-user: #e8f0fe;
+  --bubble-assistant: #f4f7fb;
+  --active-bg: #dde7fb;
+  --icon-filter: brightness(0) saturate(100%) invert(18%) sepia(6%) saturate(0%) hue-rotate(177deg) brightness(96%) contrast(86%);
+}
+
+.app.dark {
+  --bg: #121212;
+  --text: #f1f1f1;
+  --sidebar-bg: #1a1a1a;
+  --card-bg: #23272f;
+  --border: #333333;
+  --muted: #a7a7a7;
+  --nav-text: #f3f3f3;
+  --bubble-user: #243244;
+  --bubble-assistant: #1f1f1f;
+  --active-bg: #2a3550;
+  --icon-filter: brightness(0) saturate(100%) invert(98%) sepia(3%) saturate(162%) hue-rotate(213deg) brightness(114%) contrast(91%);
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
 }
